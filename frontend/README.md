@@ -14,3 +14,16 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the Oxlint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+
+
+
+## Healthcare Explorer
+
+This frontend provides two main graph exploration features:
+
+- **Doctor Referral Chain** — searches referral relationships starting from a selected doctor.
+- **Condition → Hospital Network** — displays conditions, hospitals, and patient counts from the healthcare graph.
+
+The frontend communicates with the Spring Boot backend using the `VITE_API_BASE_URL` environment variable.
+
+For setup instructions, see [SETUP.md](./SETUP.md).
