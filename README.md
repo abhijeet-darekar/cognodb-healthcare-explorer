@@ -140,3 +140,40 @@ A relational database would require several joins to represent these relationshi
 ### Doctor Referral Chain
 
 ![Doctor Referral Chain](ui-referral-chain1.png)
+
+
+
+
+
+
+## API Quick Reference
+
+### Backend Health
+
+```text
+GET http://localhost:8080/api/health
+```
+
+### Seed Healthcare Data
+
+```text
+POST http://localhost:8080/api/seed
+```
+
+### Doctor Referral Chain
+
+```text
+GET http://localhost:8080/api/referral-chain?doctorName=Dr.%20Mehta
+```
+
+### Condition-Hospital Network
+
+```text
+GET http://localhost:8080/api/condition-hospital-network
+```
+
+For detailed API information, see [`backend/API.md`](./backend/API.md).
+
+For backend setup instructions, see [`backend/SETUP.md`](./backend/SETUP.md).
+
+For frontend setup instructions, see [`frontend/SETUP.md`](./frontend/SETUP.md).
