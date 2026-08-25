@@ -24,3 +24,7 @@ Thumbs.db
 *.log
 
 backend/.env
+
+# Local development
+*.tmp
+*.swp
