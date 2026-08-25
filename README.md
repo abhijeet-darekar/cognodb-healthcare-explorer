@@ -2,6 +2,13 @@
 
 A graph-based healthcare explorer built with Spring Boot, React, and CognoDB. The application allows users to explore doctor referral chains and condition-to-hospital relationships.
 
+## Documentation
+
+- [Backend API](./backend/API.md)
+- [Backend Setup](./backend/SETUP.md)
+- [Frontend Setup](./frontend/SETUP.md)
+- [Development Guide](./DEVELOPMENT.md)
+
 
 ## Why a Graph Database?
 
