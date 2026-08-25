@@ -5,6 +5,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class CognodbHealthcareApplication {
@@ -19,9 +21,21 @@ public class CognodbHealthcareApplication {
             try (var session = driver.session()) {
                 var result = session.run("RETURN 1 AS connected");
                 System.out.println(
-                    "CognoDB connection successful: "
-                    + result.single().get("connected").asInt()
+                        "CognoDB connection successful: "
+                                + result.single().get("connected").asInt()
                 );
+            }
+        };
+    }
+
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/api/**")
+                        .allowedOrigins("http://localhost:5173")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
             }
         };
     }
