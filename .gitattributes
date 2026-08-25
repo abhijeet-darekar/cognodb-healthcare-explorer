@@ -1,0 +1,9 @@
+* text=auto
+*.java text
+*.js text
+*.jsx text
+*.css text
+*.html text
+*.md text
+*.json text
+*.properties text
