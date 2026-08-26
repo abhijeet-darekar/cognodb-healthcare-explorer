@@ -1,10 +1,10 @@
 package com.abhijeet.cognodb.service;
 
 import com.abhijeet.cognodb.repository.PatientRepository;
-import org.neo4j.driver.Record;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class PatientService {
@@ -15,7 +15,7 @@ public class PatientService {
         this.patientRepository = patientRepository;
     }
 
-    public List<Record> findAllPatients() {
+    public List<Map<String, Object>> findAllPatients() {
         return patientRepository.findAllPatients();
     }
 }
