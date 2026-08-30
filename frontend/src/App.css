@@ -603,3 +603,133 @@ footer {
     gap: 8px;
   }
 }
+
+
+
+
+
+
+
+/* -------------------------
+   Interactive React Flow Graph
+-------------------------- */
+
+.flow-container {
+  height: 430px;
+  margin-top: 10px;
+  overflow: hidden;
+  border: 1px solid #dfe7ef;
+  border-radius: 16px;
+  background:
+          radial-gradient(circle at center, #ffffff 0%, #f7fbff 100%);
+}
+
+.flow-container .react-flow__edge-path {
+  stroke: #138a8a;
+  stroke-width: 2.5;
+}
+
+.flow-container .react-flow__edge-text {
+  fill: #526174;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.flow-container .react-flow__edge-textbg {
+  fill: #ffffff;
+}
+
+.flow-container .react-flow__controls {
+  border: 1px solid #dbe4ed;
+  box-shadow: 0 6px 18px rgba(24, 48, 72, 0.1);
+}
+
+.flow-container .react-flow__controls-button {
+  border-bottom: 1px solid #e4eaf1;
+  background: #ffffff;
+  color: #334155;
+}
+
+.flow-container .react-flow__minimap {
+  border: 1px solid #dbe4ed;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 30px auto 0;
+}
+
+.hero-stats div {
+  min-width: 105px;
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.hero-stats strong,
+.hero-stats span {
+  display: block;
+}
+
+.hero-stats strong {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.hero-stats span {
+  margin-top: 3px;
+  color: #cfe7ef;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.compact {
+  padding: 25px 15px;
+}
+
+@media (max-width: 900px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-stats {
+    gap: 8px;
+  }
+
+  .hero-stats div {
+    min-width: 85px;
+    padding: 10px;
+  }
+
+  .hero-stats strong {
+    font-size: 15px;
+  }
+
+  .hero-stats span {
+    font-size: 8px;
+  }
+
+  .flow-container {
+    height: 500px;
+  }
+}
