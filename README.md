@@ -97,7 +97,7 @@ RETURN DISTINCT
        h.name AS hospital
 ```
 
-The `$name` parameter is supplied through the official Neo4j Java driver.
+The `$name` parameter is supplied by the Spring Boot backend through the database driver.
 
 The seeded data contains this two-hop referral chain:
 
