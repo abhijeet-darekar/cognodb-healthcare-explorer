@@ -79,7 +79,7 @@ Create a `.env` file in the `backend` directory:
 COGNODB_URI=your_cognodb_uri
 COGNODB_USERNAME=cognodb
 COGNODB_PASSWORD=your_password
-
+```
 
 
 ## Main Cypher Queries
