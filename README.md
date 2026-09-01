@@ -20,7 +20,7 @@ connected to a live backend and CognoDB database.
 ### Available Features
 
 - Select a patient and explore their healthcare relationships.
-- View Patient → Condition → Treatment → Provider → Hospital relationships.
+- View Patient → Condition → Treatment and Patient → Doctor → Hospital relationships.
 - Search doctor referral chains.
 - Explore the Condition → Hospital network.
 - View patient counts associated with conditions and hospitals.
