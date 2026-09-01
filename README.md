@@ -1,5 +1,31 @@
 # Healthcare Relationship Explorer
 
+## Live Demo
+
+### Frontend
+
+https://cognodb-healthcare-explorer-1.onrender.com
+
+### Backend
+
+https://cognodb-healthcare-backend.onrender.com
+
+### GitHub Repository
+
+https://github.com/abhijeet-darekar/cognodb-healthcare-explorer
+
+The deployed application provides an interactive healthcare graph explorer
+connected to a live backend and CognoDB database.
+
+### Available Features
+
+- Select a patient and explore their healthcare relationships.
+- View Patient → Condition → Treatment → Provider → Hospital relationships.
+- Search doctor referral chains.
+- Explore the Condition → Hospital network.
+- View patient counts associated with conditions and hospitals.
+
+
 A graph-based healthcare explorer built with Spring Boot, React, and CognoDB. The application allows users to explore doctor referral chains and condition-to-hospital relationships.
 
 ## Documentation
