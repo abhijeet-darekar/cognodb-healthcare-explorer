@@ -17,7 +17,8 @@ import java.util.Map;
 @CrossOrigin(origins = {
         "http://localhost:5173",
         "http://localhost:5174",
-        "http://localhost:5175"
+        "http://localhost:5175",
+        "https://cognodb-healthcare-explorer-1.onrender.com"
 })
 @RestController
 public class QueryController {

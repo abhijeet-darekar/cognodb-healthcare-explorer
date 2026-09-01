@@ -20,6 +20,7 @@ public class CognodbHealthcareApplication {
         return args -> {
             try (var session = driver.session()) {
                 var result = session.run("RETURN 1 AS connected");
+
                 System.out.println(
                         "CognoDB connection successful: "
                                 + result.single().get("connected").asInt()
@@ -31,11 +32,25 @@ public class CognodbHealthcareApplication {
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
+
             @Override
             public void addCorsMappings(CorsRegistry registry) {
+
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:5173")
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
+                        .allowedOrigins(
+                                "http://localhost:5173",
+                                "http://localhost:5174",
+                                "http://localhost:5175",
+                                "https://cognodb-healthcare-explorer-1.onrender.com"
+                        )
+                        .allowedMethods(
+                                "GET",
+                                "POST",
+                                "PUT",
+                                "DELETE",
+                                "OPTIONS"
+                        )
+                        .allowedHeaders("*");
             }
         };
     }
